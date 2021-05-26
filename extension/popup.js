@@ -2,13 +2,18 @@
 HIVE_APPS = {
 
 // blogging
+  broadhive:     {id: 'broadhive', name: 'Broadhive', icon: '', url: 'https://www.broadhive.org', description: ''},
+  dbuzz:         {id: 'dbuzz', name: 'dBuzz', icon: '', url: 'https://d.buzz', description: ''},
   ecency:        {id: 'ecency', name: 'Ecency', icon: '', url: 'https://ecency.com/', description: ''},
   'hive.blog':   {id: 'hive.blog', name: 'Hive.blog', icon: '', url: 'https://hive.blog/', description: ''},
   leofinance:    {id: 'leofinance', name: 'LeoFinance', icon: '', url: 'https://leofinance.io/', description: ''},
+  palnet:        {id: 'palnet', name: 'PALNet', icon: '', url: 'https://www.palnet.io', description: ''},
   peakd:         {id: 'peakd', name: 'PeakD', icon: '', url: 'https://peakd.com/', description: 'The intuitive way to experience everything HIVE'},
+  proofofbrain:  {id: 'proofofbrain', name: 'ProofOfBrain', icon: '', url: 'https://www.proofofbrain.io', description: ''},
 
 // gaming
   dcity:         {id: 'dcity', name: 'dCity', icon: '', url: 'https://dcity.io', description: ''},
+  dcrops:        {id: 'dcrops', name: 'dCrops', icon: '', url: '', description: ''},
   exode:         {id: 'exode', name: 'EXODE', icon: '', url: 'https://exodegame.com/', description: ''},
   hashkings:     {id: 'hashkings', name: 'HashKings', icon: '', url: 'https://farm.hashkings.app/play', description: ''},
   rabona:        {id: 'rabona', name: 'Rabona', icon: '', url: 'http://rabona.io', description: ''},
@@ -21,10 +26,13 @@ HIVE_APPS = {
   leodex:        {id: 'leodex', name: 'Leo Dex', icon: '', url: 'https://leodex.io', description: ''},
   nftmart:       {id: 'nftmart', name: 'NFTMart', icon: '', url: 'https://nftm.art', description: ''},
   tribaldex:     {id: 'tribaldex', name: 'Tribaldex', icon: '', url: 'https://tribaldex.com', description: ''},
+  vftlab:        {id: 'vftlab', name: 'VFT Lab', icon: '', url: 'https://vftlab.finance', description: ''},
 
-// art
+// music & art
+  creativecoin:  {id: 'creativecoin', name: 'CreativeCoin', icon: '', url: 'https://www.creativecoin.xyz', description: ''},
   lensy:         {id: 'lensy', name: 'Lensy', icon: '', url: 'https://lensy.io/', description: ''},
   nftshowroom:   {id: 'nftshowroom', name: 'NFTShowroom', icon: '', url: 'https://nftshowroom.com/',  description: 'Collectible, scarce, tokenized art'},
+  musicforlife:  {id: 'musicforlife', name: 'MusicForLife', icon: '', url: 'https://www.musicforlife.io', description: ''},
 
 // utilities  
   hiveblocks:    {id: 'hiveblocks', name: 'Hiveblocks', icon: '', url: 'https://hiveblocks.com/', description: 'Hive block explorer tool'},
@@ -52,13 +60,13 @@ function drawMenu() {
 
   // data
   var data = {categories: [ 
-    {name: 'Favorites', apps: getFavorites()},
-    {name: 'Recents',   apps: getRecents()},
-    {name: 'Art',       apps: expandAppData(['lensy', 'nftshowroom'])},
-    {name: 'Blogging',  apps: expandAppData(['peakd', 'hive.blog', 'leofinance', 'ecency'])},
-    {name: 'Gaming',    apps: expandAppData(['dcity', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands'])},
-    {name: 'Markets',  apps: expandAppData(['hive-engine','leodex','hivelist', 'nftmart','tribaldex'])},
-    {name: 'Utilities', apps: expandAppData(['hiveblocks', 'hivestats', 'hive-engine', 'hivesearcher', 'hivetasks'])},
+    {name: 'Favorites',   apps: getFavorites()},
+    {name: 'Recents',     apps: getRecents()},
+    {name: 'ArtAndMusic', apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
+    {name: 'Blogging',    apps: expandAppData(['broadhive', 'dbuzz', 'ecency', 'hive.blog', 'leofinance', 'palnet', 'peakd', 'proofofbrain'])},
+    {name: 'Gaming',      apps: expandAppData(['dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands'])},
+    {name: 'Markets',     apps: expandAppData(['hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex', 'vftlab'])},
+    {name: 'Utilities',   apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks'])},
   ]};
 
   console.log(data)
