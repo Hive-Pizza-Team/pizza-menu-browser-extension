@@ -3,7 +3,8 @@ HIVE_APPS = {
 
 // blogging
   broadhive:     {id: 'broadhive', name: 'Broadhive', icon: '', url: 'https://www.broadhive.org', description: ''},
-  dbuzz:         {id: 'dbuzz', name: 'dBuzz', icon: '', url: 'https://d.buzz', description: ''},
+  dbuzz:         {id: 'dbuzz', name: 'dBuzz', icon: '', url: 'https://blog.d.buzz', description: ''},
+  dunksocial:    {id: 'dunksocial', name: 'DunkSocial', icon: '', url: 'https://dunksocial.io', description: ''},
   ecency:        {id: 'ecency', name: 'Ecency', icon: '', url: 'https://ecency.com/', description: ''},
   'hive.blog':   {id: 'hive.blog', name: 'Hive.blog', icon: '', url: 'https://hive.blog/', description: ''},
   leofinance:    {id: 'leofinance', name: 'LeoFinance', icon: '', url: 'https://leofinance.io/', description: ''},
@@ -13,7 +14,7 @@ HIVE_APPS = {
 
 // gaming
   dcity:         {id: 'dcity', name: 'dCity', icon: '', url: 'https://dcity.io', description: ''},
-  dcrops:        {id: 'dcrops', name: 'dCrops', icon: '', url: '', description: ''},
+  dcrops:        {id: 'dcrops', name: 'dCrops', icon: '', url: 'https://dcrops.com', description: ''},
   exode:         {id: 'exode', name: 'EXODE', icon: '', url: 'https://exodegame.com/', description: ''},
   hashkings:     {id: 'hashkings', name: 'HashKings', icon: '', url: 'https://farm.hashkings.app/play', description: ''},
   rabona:        {id: 'rabona', name: 'Rabona', icon: '', url: 'http://rabona.io', description: ''},
@@ -63,7 +64,7 @@ function drawMenu() {
     {name: 'Favorites',   apps: getFavorites()},
     {name: 'Recents',     apps: getRecents()},
     {name: 'ArtAndMusic', apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
-    {name: 'Blogging',    apps: expandAppData(['broadhive', 'dbuzz', 'ecency', 'hive.blog', 'leofinance', 'palnet', 'peakd', 'proofofbrain'])},
+    {name: 'Blogging',    apps: expandAppData(['broadhive', 'dbuzz', 'dunksocial', 'ecency', 'hive.blog', 'leofinance', 'palnet', 'peakd', 'proofofbrain'])},
     {name: 'Gaming',      apps: expandAppData(['dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands'])},
     {name: 'Markets',     apps: expandAppData(['hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex', 'vftlab'])},
     {name: 'Utilities',   apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks'])},
