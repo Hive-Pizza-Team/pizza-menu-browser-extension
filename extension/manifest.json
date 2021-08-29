@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Pizza Menu",
-  "version": "0.0.0.2",
-  "description": "Pizza Toolbar is a collection of shortcuts to useful Hive blockchain apps.",
+  "name": "Hive dApp Menu",
+  "version": "0.0.0.3",
+  "description": "Hive dApp Menu is a collection of shortcuts to useful Hive blockchain apps.",
 
   "icons": { "128": "assets/pizza_team_logo.png" },
 
