@@ -1,7 +1,10 @@
 body {
 	background-image: url('assets/hiveiobckg.png');
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: 580px;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
 }
 
 .nonfavorite {
@@ -17,28 +20,45 @@ body {
 }
 
 .list-group-item {
-	background-color: rgba(255,255,255,0.9);
-	border-top: 1px solid #ddd;
+	background-color: rgba(168, 4, 4, 0.082);
+	border-top: 1px solid #ffffff79;
 	border-radius: 0;
-	color: #000;
+	color: rgb(255, 255, 255);
+	
 }
 
-.list-group-item:hover {
-	background-color: rgba(255,255,255,0.5);
+/* Pizza Menu Basic Link Control */
+
+.list-group-item a:link, a:visited {
+  background-color: #fa0000a1;
+  border-radius: 8px;
+   width: 75%; 
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-a:link {
-  color: green;
+.list-group-item a:hover, a:active {
+  background-color: red;
 }
 
-a:visited {
-  color: green;
-}
+/* Pizza Menu Basic Scrollbar Control */
 
-a:hover {
-  color: red;
-}
 
-a:active {
-  color: blue;
-}
+  ::-webkit-scrollbar {
+	width: 20px;
+		background-color: #000000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+	background-color: #800000;
+	border-radius: 20px;
+	border: 6px solid transparent;
+	background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+	background-color: #800000;
+  }
