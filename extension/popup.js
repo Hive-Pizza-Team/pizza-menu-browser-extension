@@ -20,6 +20,8 @@ HIVE_APPS = {
   rabona:        {id: 'rabona', name: 'Rabona', icon: '', url: 'http://rabona.io', description: ''},
   risingstar:    {id: 'risingstar', name: 'RisingStar', icon: '', url: 'https://www.risingstargame.com/', description: ''},
   splinterlands: {id: 'splinterlands', name: 'Splinterlands', icon: '', url: 'https://splinterlands.com/', description: ''},
+  brewmaster:    {id: 'brewmaster', name: 'Crypto Brewmaster', icon: '', url: 'https://www.cryptobrewmaster.io/home', description: ''},
+  unsunghero:    {id: 'unsunghero', name: 'Unsung Hero', icon: '', url: 'http://unsunghero.fun/', description: ''},
 
 // markets
   hivelist:      {id: 'hivelist', name: 'HiveList', icon: '', url: 'https://hivelist.io/', description: 'HiveCommerce marketplace community'},
@@ -35,11 +37,25 @@ HIVE_APPS = {
   nftshowroom:   {id: 'nftshowroom', name: 'NFTShowroom', icon: '', url: 'https://nftshowroom.com/',  description: 'Collectible, scarce, tokenized art'},
   musicforlife:  {id: 'musicforlife', name: 'MusicForLife', icon: '', url: 'https://www.musicforlife.io', description: ''},
 
+// video & media
+    vimmtv:      {id: 'vimmtv', name: 'VimmTV', icon: '', url: 'https://www.vimm.tv/', description: 'Streaming service for content creators'},
+    aureal:      {id: 'aureal', name: 'Aureal', icon: '', url: 'https://aureal.one/', description: 'Monetize your podcasts easily'},
+    threespeak:  {id: 'threespeak', name: '3Speak', icon: '', url: 'https://3speak.tv/', description: 'Tokenized video communities'},
+    dtube:       {id: 'dtube', name: 'dTube', icon: '', url: 'https://d.tube/', description: 'Video hosting services'},
+
+ // wallets
+    keychain:     {id: 'keychain', name: 'Keychain', icon: '', url: 'https://chrome.google.com/webstore/detail/hive-keychain/jcacnejopjdphbnjgfaaobbfafkihpep?hl=en', description: 'HIVE browser extension wallet'},
+    hivesigner:   {id: 'hivesigner', name: 'Hivesigner', icon: '', url: 'https://hivesigner.com/', description: 'Hive browser wallet'},
+    vessel:       {id: 'vessel', name: 'Vessel', icon: '', url: 'https://gitlab.syncad.com/hive/vessel/-/releases', description: 'Hive desktop Wallet'},
+    hivewallet:   {id: 'hivewallet', name: 'Hivewallet', icon: '', url: 'https://hivewallet.app/', description: 'Hive mobile wallet'},
+
+  
 // utilities  
   hiveblocks:    {id: 'hiveblocks', name: 'Hiveblocks', icon: '', url: 'https://hiveblocks.com/', description: 'Hive block explorer tool'},
   hivesearcher:  {id: 'hivesearcher', name: 'Hivesearcher', icon: '', url: 'https://hivesearcher.com/', description: 'Search engine for Hive content'},
   hivestats:     {id: 'hivestats', name: 'HiveStats', icon: '', url: 'https://hivestats.io', description: ''},
   hivetasks:     {id: 'hivetasks', name: 'HiveTasks', icon: '', url: 'https://hivetasks.com/', description: ''},
+  hiveexplore:   {id: 'hiveexplore', name: 'HiveExplorer', icon: '', url: 'https://he.dtools.dev/', description: ''},
 
 
 // null
@@ -61,13 +77,15 @@ function drawMenu() {
 
   // data
   var data = {categories: [ 
-    {name: 'Favorites',   apps: getFavorites()},
-    {name: 'Recents',     apps: getRecents()},
-    {name: 'ArtAndMusic', apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
-    {name: 'Blogging',    apps: expandAppData(['broadhive', 'dbuzz', 'dunksocial', 'ecency', 'hive.blog', 'leofinance', 'palnet', 'peakd', 'proofofbrain'])},
-    {name: 'Gaming',      apps: expandAppData(['dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands'])},
-    {name: 'Markets',     apps: expandAppData(['hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex', 'vftlab'])},
-    {name: 'Utilities',   apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks'])},
+    {name: 'Favorites',     apps: getFavorites()},
+    {name: 'Recents',       apps: getRecents()},
+    {name: 'ArtAndMusic',   apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
+    {name: 'Blogging',      apps: expandAppData(['broadhive', 'dbuzz', 'dunksocial', 'ecency', 'hive.blog', 'leofinance', 'palnet', 'peakd', 'proofofbrain'])},
+    {name: 'Gaming',        apps: expandAppData(['dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands', 'brewmaster', 'unsunghero'])},
+    {name: 'Markets',       apps: expandAppData(['hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex', 'vftlab'])},
+    {name: 'VideoAndMedia', apps: expandAppData(['vimmtv', 'aureal','threespeak', 'dtube'])},
+    {name: 'Wallets',       apps: expandAppData(['keychain', 'hivesigner','vessel', 'hivewallet'])},
+    {name: 'Utilities',     apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks', 'hiveexplore'])},
   ]};
 
   console.log(data)
