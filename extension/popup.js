@@ -120,7 +120,11 @@ function drawMenu() {
       })
 
       let category = event.target.id.split('-')[1]
-      document.querySelector(`#submenu-${category}`).style.display = 'block'
+      
+      let submenuCategory = document.querySelector(`#submenu-${category}`)
+      if (submenuCategory) {
+        submenuCategory.style.display = 'block'
+      }
   }
 
   // set up event handlers
