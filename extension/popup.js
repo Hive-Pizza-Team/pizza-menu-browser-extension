@@ -25,6 +25,7 @@ HIVE_APPS = {
 
 // markets
   hivelist:      {id: 'hivelist', name: 'HiveList', icon: '', url: 'https://hivelist.io/', description: 'HiveCommerce marketplace community'},
+  gamestore:     {id: 'gamestore', name: 'Video Game Store', icon: '', url: 'https://hive.pizza/shop/', description: 'PIZZA Steam Video Game Store'},
   'hive-engine': {id: 'hive-engine', name: 'Hive Engine', icon: '', url: 'https://hive-engine.com/', description: ''},
   leodex:        {id: 'leodex', name: 'Leo Dex', icon: '', url: 'https://leodex.io', description: ''},
   nftmart:       {id: 'nftmart', name: 'NFTMart', icon: '', url: 'https://nftm.art', description: ''},
@@ -57,7 +58,8 @@ HIVE_APPS = {
   hivetasks:     {id: 'hivetasks', name: 'HiveTasks', icon: '', url: 'https://hivetasks.com/', description: ''},
   hiveexplore:   {id: 'hiveexplore', name: 'HiveExplorer', icon: '', url: 'https://he.dtools.dev/', description: ''},
 
-
+  
+  
 // null
 //  null:          {id: '', name: '', icon: '', url: '', description: ''},
 
@@ -82,7 +84,7 @@ function drawMenu() {
     {name: 'ArtAndMusic',   apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
     {name: 'Blogging',      apps: expandAppData(['broadhive', 'dbuzz', 'dunksocial', 'ecency', 'hive.blog', 'leofinance', 'palnet', 'peakd', 'proofofbrain'])},
     {name: 'Gaming',        apps: expandAppData(['dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands', 'brewmaster', 'unsunghero'])},
-    {name: 'Markets',       apps: expandAppData(['hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex', 'vftlab'])},
+    {name: 'Markets',       apps: expandAppData(['gamestore', 'hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex', 'vftlab'])},
     {name: 'VideoAndMedia', apps: expandAppData(['vimmtv', 'aureal','threespeak', 'dtube'])},
     {name: 'Wallets',       apps: expandAppData(['keychain', 'hivesigner','vessel', 'hivewallet'])},
     {name: 'Utilities',     apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks', 'hiveexplore'])},
