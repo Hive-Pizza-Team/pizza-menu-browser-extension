@@ -105,14 +105,14 @@ function drawMenu() {
   console.log(data)
 
   var source = document.querySelector('#menu-template').innerHTML;
-  var template = Handlebars.compile(source);
+  var template = Handlebars.templates.menu
 
   // data is passed to above template
-  var output = template(data);
+  var output = template(data)
   document.querySelector('#menu').innerHTML = output;
 
   var source = document.querySelector('#submenu-template').innerHTML;
-  var template = Handlebars.compile(source);
+  var template = Handlebars.templates.submenu
 
   // data is passed to above template
   var output = template(data);

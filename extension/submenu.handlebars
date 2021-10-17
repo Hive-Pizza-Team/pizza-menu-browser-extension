@@ -1,0 +1,19 @@
+<!-- HANDLEBARS TEMPLATE -->
+  {{#categories}}
+    <div id="submenu-{{name}}" class="submenu">  
+
+      <ul class="list-group">
+        {{#this.apps}}
+          <li class="list-group-item">
+            <a href="{{url}}" id="{{id}}">{{name}}</a> 
+            <a class="nonfavorite" id="{{id}}">
+              <i class="far fa-star" id="{{id}}"></i>
+            </a>
+            <br>
+          </li>
+        {{/this.apps}}
+      </ul>
+
+    </div>
+  {{/categories}}
+<!-- END HANDLEBARS TEMPLATE -->

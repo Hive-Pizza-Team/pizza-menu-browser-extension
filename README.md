@@ -9,4 +9,4 @@ The Pizza Menu includes several apps which require authentication. This extensio
 
 ### Screenshot
 
-![PizzaMenuScreenshot](https://user-images.githubusercontent.com/62359919/116835488-91c50c00-ab77-11eb-95df-45e72348a9f8.png)
+![hdm](https://user-images.githubusercontent.com/62359919/133454282-61689d5f-1cca-4aa9-be35-0716d0657a6e.png)

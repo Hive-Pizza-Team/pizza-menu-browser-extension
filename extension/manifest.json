@@ -1,18 +1,17 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Hive dApp Menu",
   "version": "0.0.0.7",
   "description": "Hive dApp Menu is a collection of shortcuts to useful Hive blockchain apps.",
 
   "icons": { "128": "assets/pizza_team_logo_new.png" },
 
-  "browser_action": {
+  "action": {
     "default_title": "Start",
     "default_popup": "popup.html"
   },
 
   "background": {
-    "scripts": ["background.js"]
-  },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+    "service_worker": "background.js"
+  }
 }
