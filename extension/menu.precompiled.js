@@ -11,7 +11,7 @@ templates['menu'] = template({"1":function(container,depth0,helpers,partials,dat
   return "    <li class=\"list-group-item\" id=\"cat-"
     + alias4(((helper = (helper = lookupProperty(helpers,"name") || (depth0 != null ? lookupProperty(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":4,"column":40},"end":{"line":4,"column":48}}}) : helper)))
     + "\">\n        <i class=\"fas fa-chevron-left\"></i> "
-    + alias4(((helper = (helper = lookupProperty(helpers,"name") || (depth0 != null ? lookupProperty(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":5,"column":44},"end":{"line":5,"column":52}}}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"prettyName") || (depth0 != null ? lookupProperty(depth0,"prettyName") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"prettyName","hash":{},"data":data,"loc":{"start":{"line":5,"column":44},"end":{"line":5,"column":58}}}) : helper)))
     + "\n      </a>\n    </li>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, options, lookupProperty = container.lookupProperty || function(parent, propertyName) {

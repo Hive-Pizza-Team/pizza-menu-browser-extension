@@ -24,28 +24,6 @@
   <div id="menu-template">
   </div>
 
-  <!-- HANDLEBARS TEMPLATE -->
-  <script id="submenu-template" type="text/x-handlebars-template">
-    {{#categories}}
-      <div id="submenu-{{name}}" class="submenu">  
-
-        <ul class="list-group">
-          {{#this.apps}}
-            <li class="list-group-item">
-              <a href="{{url}}" id="{{id}}">{{name}}</a> 
-              <a class="nonfavorite" id="{{id}}">
-                <i class="far fa-star" id="{{id}}"></i>
-              </a>
-              <br>
-            </li>
-          {{/this.apps}}
-        </ul>
-
-      </div>
-    {{/categories}}
-  </script>
-  <!-- END HANDLEBARS TEMPLATE -->
-
   <br><br><br>
   <nav class="navbar fixed-bottom navbar-light bg-dark">
     <span class="badge badge-dark text-light">Brought to you by the <a href="https://hive.pizza"><u>Pizza Token Team</u></a></span><br>

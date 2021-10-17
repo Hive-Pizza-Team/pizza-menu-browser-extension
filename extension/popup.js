@@ -90,30 +90,25 @@ function drawMenu() {
 
   // data
   var data = {categories: [ 
-    {name: 'Favorites',     apps: getFavorites()},
-    {name: 'Recents',       apps: getRecents()},
-    {name: 'ArtAndMusic',   apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
-    {name: 'Blogging',      apps: expandAppData(['broadhive', 'cinetv', 'dbuzz', 'dunksocial', 'ecency', 'hive.blog', 'leofinance', 'oneup', 'palnet', 'peakd', 'proofofbrain','splintertalk', 'stemgeeks'])},
-    {name: 'Gaming',        apps: expandAppData(['brewmaster', 'dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands', 'unsunghero'])},
-    {name: 'Markets',       apps: expandAppData(['gamestore', 'hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex'])},
-    {name: 'PizzaLabs',     apps: expandAppData(['pizzawebsite','discord','staketool', 'hivebeautiful', 'transferstream', 'hiverss'])},
-    {name: 'VideoAndMedia', apps: expandAppData(['vimmtv', 'aureal','threespeak', 'dtube'])},
-    {name: 'Wallets',       apps: expandAppData(['keychain', 'hivesigner','vessel', 'hivewallet'])},
-    {name: 'Utilities',     apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks', 'hiveexplore'])},
-  ]};
+    {name: 'Favorites', prettyName: 'Favorites', apps: getFavorites()},
+    {name: 'Recents', prettyName: 'Recents', apps: getRecents()},
+    {name: 'ArtAndMusic', prettyName: 'Art And Music', apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
+    {name: 'Blogging', prettyName: 'Blogging', apps: expandAppData(['broadhive', 'cinetv', 'dbuzz', 'dunksocial', 'ecency', 'hive.blog', 'leofinance', 'oneup', 'palnet', 'peakd', 'proofofbrain','splintertalk', 'stemgeeks'])},
+    {name: 'Gaming', prettyName: 'Gaming', apps: expandAppData(['brewmaster', 'dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands', 'unsunghero'])},
+    {name: 'Markets', prettyName: 'Markets', apps: expandAppData(['gamestore', 'hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex'])},
+    {name: 'PizzaLabs', prettyName: 'PizzaLabs', apps: expandAppData(['pizzawebsite','discord','staketool', 'hivebeautiful', 'transferstream', 'hiverss'])},
+    {name: 'VideoAndMedia', prettyName: 'Video And Media', apps: expandAppData(['vimmtv', 'aureal','threespeak', 'dtube'])},
+    {name: 'Wallets', prettyName: 'Wallets', apps: expandAppData(['keychain', 'hivesigner','vessel', 'hivewallet'])},
+    {name: 'Utilities', prettyName: 'Utilities', apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks', 'hiveexplore'])},
+  ]}
 
   console.log(data)
 
-  var source = document.querySelector('#menu-template').innerHTML;
   var template = Handlebars.templates.menu
-
-  // data is passed to above template
   var output = template(data)
   document.querySelector('#menu').innerHTML = output;
 
-  var source = document.querySelector('#submenu-template').innerHTML;
   var template = Handlebars.templates.submenu
-
   // data is passed to above template
   var output = template(data);
   document.querySelector('#submenus').innerHTML = output;
