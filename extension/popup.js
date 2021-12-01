@@ -36,18 +36,21 @@ HIVE_APPS = {
     tribaldex:     {id: 'tribaldex', name: 'Tribaldex', icon: '', url: 'https://tribaldex.com', description: ''},
 
 // music & art
+    beatzchain:    {id: 'beatzchain', name: 'Beatzchain', icon: '', url: 'https://www.beatzchain.com', description: ''},
     creativecoin:  {id: 'creativecoin', name: 'CreativeCoin', icon: '', url: 'https://www.creativecoin.xyz', description: ''},
     lensy:         {id: 'lensy', name: 'Lensy', icon: '', url: 'https://lensy.io/', description: ''},
     nftshowroom:   {id: 'nftshowroom', name: 'NFTShowroom', icon: '', url: 'https://nftshowroom.com/',  description: 'Collectible, scarce, tokenized art'},
+    nfttunz:       {id: 'nfttunz', name: 'NFTTunz', icon: '', url: 'https://www.nfttunz.io', description: ''},
     musicforlife:  {id: 'musicforlife', name: 'MusicForLife', icon: '', url: 'https://www.musicforlife.io', description: ''},
 
+
 // PizzaTools
-    pizzawebsite:       {id: 'pizzawebsite', name: 'hive.pizza', icon: '', url: 'https://www.hive.pizza', description: 'hive.pizza website'},
-    discord:            {id: 'discord', name: 'PIZZA Discord', icon: '', url: 'https://www.discord.gg/hivepizza', description: 'hive.pizza Discord'},
-    staketool:          {id: 'staketool', name: 'HE Staking Tool', icon: '', url: 'https://www.hive.pizza/showcase', description: 'Stake all HE tokens easily with one click'},
-    hivebeautiful:      {id: 'hivebeautiful', name: 'Hive Is Beautiful', icon: '', url: 'https://hiveuprss.github.io/hiveisbeautiful/', description: 'Visualize block data in a beautiful way'},
-    transferstream:     {id: 'transferstream', name: 'Hive Transfer Stream', icon: '', url: 'https://hiveuprss.github.io/transferstream/', description: 'Data stream of HIVE transfers in real-time'},
-    hiverss:            {id: 'hiverss', name: 'HiveRSS', icon: '', url: 'https://hiverss.com/', description: 'A simple tool for creating Atom/RSS feeds from Hive accounts and categories.'},
+    pizzawebsite:  {id: 'pizzawebsite', name: 'hive.pizza', icon: '', url: 'https://www.hive.pizza', description: 'hive.pizza website'},
+    discord:       {id: 'discord', name: 'PIZZA Discord', icon: '', url: 'https://www.discord.gg/hivepizza', description: 'hive.pizza Discord'},
+    staketool:     {id: 'staketool', name: 'HE Staking Tool', icon: '', url: 'https://www.hive.pizza/showcase', description: 'Stake all HE tokens easily with one click'},
+    hivebeautiful: {id: 'hivebeautiful', name: 'Hive Is Beautiful', icon: '', url: 'https://hiveuprss.github.io/hiveisbeautiful/', description: 'Visualize block data in a beautiful way'},
+    transferstream:{id: 'transferstream', name: 'Hive Transfer Stream', icon: '', url: 'https://hiveuprss.github.io/transferstream/', description: 'Data stream of HIVE transfers in real-time'},
+    hiverss:       {id: 'hiverss', name: 'HiveRSS', icon: '', url: 'https://hiverss.com/', description: 'A simple tool for creating Atom/RSS feeds from Hive accounts and categories.'},
 
 // video & media
     vimmtv:        {id: 'vimmtv', name: 'VimmTV', icon: '', url: 'https://www.vimm.tv/', description: 'Streaming service for content creators'},
@@ -92,11 +95,11 @@ function drawMenu() {
   var data = {categories: [ 
     {name: 'Favorites', prettyName: 'Favorites', apps: getFavorites()},
     {name: 'Recents', prettyName: 'Recents', apps: getRecents()},
-    {name: 'ArtAndMusic', prettyName: 'Art And Music', apps: expandAppData(['creativecoin', 'lensy', 'nftshowroom', 'musicforlife'])},
+    {name: 'ArtAndMusic', prettyName: 'Art And Music', apps: expandAppData(['beatzchain', 'creativecoin', 'lensy', 'nftshowroom', 'nfttunz', 'musicforlife'])},
     {name: 'Blogging', prettyName: 'Blogging', apps: expandAppData(['broadhive', 'cinetv', 'dbuzz', 'dunksocial', 'ecency', 'hive.blog', 'leofinance', 'oneup', 'palnet', 'peakd', 'proofofbrain','splintertalk', 'stemgeeks'])},
     {name: 'Gaming', prettyName: 'Gaming', apps: expandAppData(['brewmaster', 'dcity', 'dcrops', 'exode', 'hashkings', 'rabona', 'risingstar', 'splinterlands', 'unsunghero'])},
     {name: 'Markets', prettyName: 'Markets', apps: expandAppData(['gamestore', 'hivelist', 'hive-engine','leodex', 'nftmart', 'tribaldex'])},
-    {name: 'PizzaLabs', prettyName: 'PizzaLabs', apps: expandAppData(['pizzawebsite','discord','staketool', 'hivebeautiful', 'transferstream', 'hiverss'])},
+    {name: 'PizzaLabs', prettyName: 'Pizza Labs', apps: expandAppData(['pizzawebsite','discord','staketool', 'hivebeautiful', 'transferstream', 'hiverss'])},
     {name: 'VideoAndMedia', prettyName: 'Video And Media', apps: expandAppData(['vimmtv', 'aureal','threespeak', 'dtube'])},
     {name: 'Wallets', prettyName: 'Wallets', apps: expandAppData(['keychain', 'hivesigner','vessel', 'hivewallet'])},
     {name: 'Utilities', prettyName: 'Utilities', apps: expandAppData(['hiveblocks', 'hivestats', 'hivesearcher', 'hivetasks', 'hiveexplore'])},
