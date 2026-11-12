@@ -1,4 +1,7 @@
 # pizza-menu-browser-extension
+
+[![Powered By Hive](https://img.shields.io/static/v1?label=Hive&message=Powered%20By%20Hive&color=E31337&labelColor=212529&logo=hive_blockchain&logoColor=white&style=flat)](https://hive.io/)
+
 Browser extension providing a menu of Hive apps
 
 Hive is much bigger than you think! Hive has so much to offer, so here's a menu of useful stuff to try out.
